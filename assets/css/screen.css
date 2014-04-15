@@ -9,9 +9,9 @@ html {
 
 body {
   margin: 0; 
-  padding: 0 0 20px 0; 
+  padding: 0 0 40px 0; 
   font-size: 100%;
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: Verdana, Arial, Helvetica, sans-serif 
 }
 
 h1, h2, h3, h4, h5, h6, p, table {
@@ -90,6 +90,10 @@ p {
   float: left;
 }
 
+.col_left img {
+  max-width: 321px;
+}
+
 .col_right {
   width: 54.9%;
   float: left;
@@ -110,7 +114,18 @@ p {
 }
 
 #footer {
-  margin-top: 25px;
+  margin-top: 20px;
+}
+
+a.footer_branding {
+  width: 39px;
+  height: 15px;
+  margin-top: 13px;
+  float: right;
+}
+
+a.footer_branding img {
+  display: block;
 }
 
 #worldmap {
@@ -119,6 +134,14 @@ p {
 
 
 /* text */
+
+h1 {
+  background: url(../img/syrias-children-under-siege.png) 0 0 no-repeat;
+  padding: 0;
+  text-indent: -1000em;
+  width: 321px;
+  height: 61px;
+}
 
 .intro {
   font-weight: bold;
@@ -133,8 +156,6 @@ p {
   display: inline;
   font-weight: bold;
   color: #0099ff;
-  padding-right: 12px;
-  background: url(../img/down-arrow.png) right top no-repeat;
 }
 
 p.map_note {
@@ -148,6 +169,7 @@ p.map_note {
 
 .info {
   position: absolute;
+  z-index: 100;
   margin: 2%;
   width: 95.7%;
   border: #000 1px solid;
@@ -184,12 +206,19 @@ p.map_note {
 }
 
 .info_right_padding {
-  padding: 40px 20px;
+  padding: 0 20px;
+}
+
+.caption {
+  font-size: 11px;
+  padding: 5px 0 0 0;
+  max-width: 253px;
+  margin: 0 auto;
 }
 
 .info_right img {
   margin: 0 auto;
-  max-width: 280px !important;
+  max-width: 253px !important;
   display: block;
 }
 
@@ -205,6 +234,10 @@ p.map_note {
   padding: 0 5px 0 20px;
 }
 
+.refugees {
+  padding: 4px 0;
+}
+
 .ref_left {
   width: 53%;
   float: left;
@@ -215,10 +248,19 @@ p.map_note {
   padding-top: 14px;
 }
 
+.ref_left span {
+  padding-left: 20px;
+}
+
+.syria_info .ref_left {
+  padding-top: 6px;
+}
+
 .ref_right {
   width: 38%;
   float: right;
-  font-size: 38px;
+  /*font-size: 38px;*/
+  font-size: 32px;
   font-weight: bold;
   color: #ec2a33;
   padding-right: 20px;
@@ -226,7 +268,7 @@ p.map_note {
 }
 
 .aid_bar {
-  background: #000 url(../img/down-arrow-blk.png) center top no-repeat;;
+  background: #000;
   padding: 0 20px 4px 20px;
   color: #fff;
 }
@@ -300,29 +342,268 @@ p.map_note {
 
 .stat_large {
   padding-top: 70px;
+  /*padding-left: 20px;*/
 }
 
 .aid_large_left {
-  width: 26.1%;
+  /*width: 26.1%;*/
+  width: 53%;
   float: left;
-}
-
-.aid_large_middle {
-  width: 28.9%;
-  float: left;
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 12px;
 }
 
 .aid_large_right {
   width: 38%;
-  padding-right: 20px;
-  padding-top: 18px;
-  float: left;
-  font-size: 12px;
+  padding: 18px 20px 0 0;
+  float: right;
+  font-size: 11px;
   line-height: 1;
+}
+
+#map .aid_large_left img.large_icon {
+  width: 61px !important;
+  height: 61px !important;
+  float: left;
+  margin-left: 20px;
+}
+
+.aid_large_middle {
+  /*width: 28.9%;*/
+  /*width: 37.9%;*/
+  /*float: right;*/
+  /*font-size: 32px;*/
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 12px;
+}
+
+
+/* syria promo
+--------------------------------------------------------- */
+
+.syria_promo {
+  max-width: 391px;
+}
+
+.syria_promo_left {
+  width: 40.7%;
+  float: left;
+  position: relative;
+  background: #e6e6e6;
+}
+
+.syria_promo_right {
+  width: 59.3%;
+  float: left;
+  position: relative;
+}
+
+.txt1, .txt2, .txt3, .txt4, .txt5 {
+  position: absolute;
+  font-size: 10px;
+}
+
+.txt1, .txt2, .txt3 {
+  color: #ec2a33;
+}
+
+.txt5 {
+  color: #0099ff;
+}
+
+.txt1 {
+  top: 29%;
+  width: 100%;
+  text-align: center;
+  margin-left: 2%;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.txt1 span {
+  font-size: 24px;
+}
+
+.txt2 {
+  padding: 0 10px 10px 10px;
+  text-align: center;
+  top: 73%;
+  background: #e6e6e6;
+}
+
+.ie7 .txt2 {
+  width: 90%;
+}
+
+
+.txt3 {
+  top: 16%;
+  left: 11%;
+}
+
+.txt3 span.children_number {
+  font-size: 30px;
+  clear: both;
+  float: left;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.txt3 span.children_label {
+  float: left;
+  padding-top: 14.1%;
+}
+
+.ie7 .txt3 span.children_label {
+  padding-top: 8%;
+}
+
+.txt4 {
+  top: 65%;
+  left: 11%;
+}
+
+.txt4 span,
+.txt5 span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.txt5 {
+  top: 65%;
+  left: 53%;
+  padding-right: 10px;
+}
+
+
+/* global appeal promo
+--------------------------------------------------------- */
+
+.ga_promo {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.txt6, .txt7, .txt8 {
+  position: absolute;
+}
+
+.txt6 {
+  left: 16%;
+  top: 2%;
+  color: #0099ff;
+}
+
+.txt6 h3 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.txt6 h3 span {
+  font-weight: bold !important;
+}
+
+.txt7 {
+  color: #0099ff;
+  left: 27%;
+  top: 48%;
+  font-size: 14px;
+}
+
+.txt7 span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.txt8 {
+  right: 2.5%;
+  top: 52%;
+  line-height: 1;
+  text-align: right;
+  font-size: 14px;
+}
+
+.txt8 span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* uk supporters promo
+--------------------------------------------------------- */
+
+.uks_promo {
+  position: relative;
+}
+
+.txt9, .txt10, .txt11, .txt12 {
+  position: absolute;
+}
+
+.txt9 h3 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.txt9 h3 span {
+  font-weight: bold !important;
+}
+
+.txt9 {
+  left: 16%;
+  top: 2%;
+  color: #0099ff;
+}
+
+.txt10 {
+  width: 20%;
+  left: 16%;
+  top: 43%;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.txt11 {
+  width: 20%;
+  left: 42.5%;
+  top: 41%;
+  font-weight: bold;
+  line-height: 0.8;
+  font-size: 16px;
+}
+
+.txt11 span.uks_amt {
+  font-size: 36px;
+}
+
+.txt11 span.cos,
+.txt12 span.swa {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.txt12 {
+  width: 18%;
+  right: 0;
+  top: 32%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 0.8;
+  color: #0099ff;
+  border: #000 1px solid;
+  padding: 1.8% 15% 2.4% 1.8%;
+  background: url(../img/ukaid.png) right top no-repeat;
+  background-size: contain;
+}
+
+.ie7 .txt11,
+.ie7 .txt12 {
+  line-height: 1.2;
+}
+
+.txt12 span.uks_w_amt {
+  font-size: 32px;
 }
 
 
@@ -333,44 +614,7 @@ p.map_note {
 *
 --------------------------------------------------------- */
 
-@media (max-width: 720px) {
-
-  .aid_bar {
-    background: #000 url(../img/down-arrow-blk.png) center 12px no-repeat;;
-    padding: 4px 20px;
-  }
-
-  .aid_bar p {
-    display: block;
-    padding: 0 0 8px 0;
-    text-align: center;
-    font-size: 10px;
-    margin-left: -3%;
-  }
-
-}
-
-@media (max-width: 640px) {
-
-  .info_left,
-  .info_right {
-    float: none;
-    border: none;
-    width: 100%;
-  }
-
-  .aid_left {
-    width: 38%;
-  }
-
-  .aid_right {
-    width: 38%;
-    padding-right: 20px;
-  }
-
-}
-
-@media (max-width: 480px) {
+@media (max-width: 760px) {
 
   .col_left {
     width: 100%;
@@ -387,15 +631,87 @@ p.map_note {
     padding: 8px 0 0 0;
   }
 
-  .info {
-    margin: 0;
-    margin-bottom: 30px;
-    width: 100%;
+}
+
+@media (max-width: 720px) {
+
+  .aid_bar {
+    padding: 4px 20px;
   }
+
+  .aid_bar p {
+    display: block;
+    padding: 0;
+    text-align: center;
+    font-size: 10px;
+    margin-left: -3%;
+  }
+
+  .aid_large_middle {
+    font-size: 23px;
+  }
+
+  .ref_right {
+    font-size: 28px;
+  }
+
+  .txt6 h3,
+  .txt9 h3 {
+    font-size: 20px;
+  }
+
+  .txt7 {
+    font-size: 12px;
+  }
+
+  .txt7 span {
+    font-size: 20px;
+  }
+
+  .txt8 {
+    font-size: 12px;
+  }
+
+  .txt8 span {
+    font-size: 14px;
+  }
+
+  .txt10 {
+    left: 16.5%;
+    font-size: 10px;
+  }
+
+  .txt11 {
+    font-size: 12px;
+    line-height: 0.9;
+  }
+
+  .txt11 span.uks_amt {
+    font-size: 28px;
+  }
+
+  .txt11 span.cos,
+  .txt12 span.swa {
+    font-size: 9px;
+    font-weight: normal;
+  }
+
+  .txt12 {
+    font-size: 12px;
+    line-height: 0.9;
+  }
+
+  .txt12 span.uks_w_amt {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 640px) {
 
   .info_left,
   .info_right {
-    float: none;
+    float: left;
     border: none;
     width: 100%;
   }
@@ -404,21 +720,107 @@ p.map_note {
     padding: 20px 20px 0 20px;
   }
 
-  .turkey_info .aid_stats,
-  .egypt_info .aid_stats {
-    height: auto;
+  .refugees {
+    padding: 5px 0 7px 0;
   }
 
   .aid_stats {
     margin-top: 10px;
   }
 
+  .turkey_info .aid_stats,
+  .egypt_info .aid_stats {
+    height: auto;
+  }
+
+  .aid_left {
+    width: 38%;
+  }
+
+  .aid_right {
+    width: 38%;
+    padding-right: 20px;
+  }
+
   .stat_large {
     padding-top: 20px;
   }
 
+  .txt6 h3,
+  .txt9 h3 {
+    font-size: 18px;
+  }
+
+  .txt7 {
+    font-size: 10px;
+  }
+
+  .txt7 span {
+    font-size: 18px;
+  }
+
+  .txt8 {
+    font-size: 10px;
+  }
+
+  .txt8 span {
+    font-size: 12px;
+  }
+
+  .txt10 {
+    left: 16.5%;
+    font-size: 10px;
+  }
+
+  .txt11 {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .txt11 span.uks_amt {
+    font-size: 20px;
+  }
+
+  .txt11 span.cos,
+  .txt12 span.swa {
+    font-size: 9px;
+    font-weight: normal;
+    line-height: 1;
+  }
+
+  .txt12 {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .txt12 span.uks_w_amt {
+    font-size: 18px;
+  }
+
+  a.footer_branding {
+    margin-top: 43px;
+    padding-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  h1 {
+    background-size: cover;
+    width: 250px;
+    height: 48px;
+  }
+
+  .info {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
   .ref_left {
     padding-top: 8px;
+    padding-bottom: 8px;
     font-size: 10px;
   }
 
@@ -434,16 +836,6 @@ p.map_note {
     width: 38%;
   }
 
-  .aid_large_middle {
-    font-size: 26px;
-    padding-top: 5px;
-  }
-
-  .aid_large_right {
-    font-size: 10px;
-    padding-top: 10px;
-  }
-
   p {
     font-size: 13px;
   }
@@ -456,29 +848,282 @@ p.map_note {
     font-size: 10px;
   }
 
+  .txt6 h3,
+  .txt9 h3 {
+    font-size: 15px;
+  }
+
+  .txt7 {
+    font-size: 10px;
+  }
+
+  .txt7 span {
+    font-size: 15px;
+  }
+
+  .txt8 {
+    font-size: 10px;
+  }
+
+  .txt8 span {
+    font-size: 11px;
+  }
+
+  .txt10 {
+    left: 17%;
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .txt11 {
+    font-size: 10px;
+    line-height: 1;
+    width: 30%;
+  }
+
+  .txt11 span.uks_amt {
+    font-size: 15px;
+  }
+
+  .txt11 span.cos,
+  .txt12 span.swa {
+    font-size: 9px;
+    font-weight: normal;
+  }
+
+  .txt12 {
+    width: 80%;
+    left: 0;
+    top: 130%;
+    font-size: 9px;
+    line-height: 1.2;
+    padding: 1% 18% 3% 2%;
+  }
+
+  .txt12 span.swa {
+    font-size: 11px;
+  }
+
+  .txt12 span.uks_w_amt {
+    font-size: 14px;
+  }
+
+  a.footer_branding {
+    margin-top: 100px;
+    padding-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 440px) {
+
+  .txt1, .txt2, .txt3, .txt4, .txt5 {
+    position: absolute;
+    font-size: 9px;
+  }
+
+  .txt1 {
+    top: 30%;
+    margin-left: 3%;
+  }
+
+  .txt1 span {
+    font-size: 20px;
+  }
+
+  .txt3 span.children_number {
+    font-size: 26px;
+  }
+
+  .txt3 span.children_label {
+    padding-top: 12.3%;
+  }
+
+  .txt4 span,
+  .txt5 span {
+    font-size: 16px;
+  }
+
+  .txt3 {
+    top: 13%;
+    left: 9%;
+  }
+
+  .txt4 {
+    top: 68%;
+    left: 9%;
+  }
+
+  .txt5 {
+    top: 68%;
+    left: 50%;
+  }
+
+  .txt6 h3,
+  .txt9 h3 {
+    font-size: 12px;
+  }
+
+  .txt7 {
+    font-size: 9px;
+  }
+
+  .txt7 span {
+    font-size: 12px;
+  }
+
+  .txt8 {
+    font-size: 9px;
+  }
+
+  .txt8 span {
+    font-size: 10px;
+  }
+
+  p.map_note {
+    font-size: 9px;
+  }
+
+  .txt11 span.uks_amt {
+    font-size: 13px;
+  }
+
+  .txt11 span.cos,
+  .txt12 span.swa {
+    font-size: 9px;
+    font-weight: normal;
+  }
+
+  .txt10 {
+    font-size: 9px;
+    line-height: 1;
+  }
+
+  .txt11 {
+    font-size: 9px;
+    line-height: 1;
+  }
+
+  .txt12 span.swa {
+    font-size: 11px;
+  }
+
 }
 
 @media (max-width: 400px) {
+
   .ref_right {
-    width: 34%;
-    font-size: 24px;
+    width: 35%;
+    font-size: 20px;
+    padding-top: 5px;
   }
   .aid_left {
-    width: 34%;
+    width: 35%;
     font-size: 12px;
   }
 
   .aid_right {
-    width: 34%;
-    font-size: 9px;
+    width: 35%;
+    font-size: 8px;
   }
+
+  .aid_large_left {
+    width: 53%;
+  }
+
+  .aid_large_middle {
+    font-size: 12px;
+    padding-top: 8px;
+  }
+
+  .aid_large_right {
+    width: 35%;
+    font-size: 10px;
+    padding-top: 10px;
+  }
+
+  .prompt p {
+    display: block;
+    margin-top: 30px;
+  }
+
 }
 
-@media (max-width: 340px) {
-  .aid_large_right {
-    float: none;
-    width: 50%;
-    clear: both;
-    padding-left: 26.1%;
+@media (max-width: 360px) {
+
+  .txt1 span {
+    font-size: 16px;
   }
+
+  .txt3 span.children_number {
+    font-size: 20px;
+  }
+
+  .txt4 span,
+  .txt5 span {
+    font-size: 11px;
+  }
+
+  .txt3 span.children_label {
+    padding-top: 9%;
+  }
+
+  .txt3 {
+    top: 13%;
+    left: 9%;
+  }
+
+  .txt4 {
+    top: 68%;
+    left: 9%;
+  }
+
+  .txt5 {
+    top: 68%;
+    left: 50%;
+  }
+
+  .txt6 h3,
+  .txt9 h3 {
+    font-size: 10px;
+  }
+
+  .txt7 {
+    font-size: 9px;
+  }
+
+  .txt7 span {
+    font-size: 10px;
+  }
+
+  .txt8 {
+    font-size: 9px;
+  }
+
+  .txt8 span {
+    font-size: 10px;
+  }
+
+  .txt10 {
+    font-size: 8px;
+  }
+
+  /*.txt11, .txt12 {
+    top: 29%;
+  }*/
+
+  .txt11 span.cos,
+  .txt12 span.swa {
+    font-size: 8px;
+    font-weight: normal;
+  }
+
+  .txt12 span.swa {
+    font-size: 11px;
+  }
+
+  .txt11 span.uks_amt {
+    font-size: 15px;
+  }
+
 }
